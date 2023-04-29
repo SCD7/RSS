@@ -1,0 +1,20 @@
+﻿@model IEnumerable<System.ServiceModel.Syndication.SyndicationItem>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4 mb-20">Welcome</h1>
+
+    @foreach(var item in Model)
+    {
+        <div class="row">
+            <div class="block">
+                <h2>@item.Title.Text</h2>
+                @*<p>{{@item.BaseUri.ToString()}}</p>*@
+                <p>@item.Summary.Text</p>
+                <p>@item.PublishDate</p>
+            </div>
+        </div>
+    }
+</div>

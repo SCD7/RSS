@@ -1,4 +1,4 @@
-﻿@model IEnumerable<System.ServiceModel.Syndication.SyndicationItem>
+﻿@model IEnumerable<NewsItemModel>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -10,9 +10,9 @@
     {
         <div class="row">
             <div class="block">
-                <h2>@item.Title.Text</h2>
+                <h2>@item.Title</h2>
                 @*<p>{{@item.BaseUri.ToString()}}</p>*@
-                <p>@item.Summary.Text</p>
+                <p>@item.Description</p>
                 <p>@item.PublishDate</p>
             </div>
         </div>

@@ -8,7 +8,11 @@
 
         public int Width { get; set; }
 
-        public string Url { get; set; }
+        public string? Medium { get; set; }
+
+        public string? Url { get; set; }
+
+
 
     }
 }
